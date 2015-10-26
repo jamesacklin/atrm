@@ -1,0 +1,169 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  background: #471539;
+  color: white; }
+
+h1 {
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 0.08em 0.08em 0 rgba(0, 0, 0, 0.66);
+  letter-spacing: 0.166666667em;
+  font-size: 3em;
+  font-family: "Proxima Nova", "Helvetica", "Arial", sans-serif;
+  line-height: 1;
+  margin-top: 0;
+  margin-bottom: 0.5em; }
+
+h2 {
+  color: white;
+  text-transform: lowercase;
+  letter-spacing: 0.166666667em;
+  font-size: 2.5em;
+  font-family: "Proxima Nova", "Helvetica", "Arial", sans-serif;
+  line-height: 1;
+  margin-top: 0;
+  margin-bottom: 0.5em; }
+
+h3 {
+  color: #ff4b37;
+  letter-spacing: 0.083333333em;
+  font-size: 1.5em;
+  font-family: "Proxima Nova", "Helvetica", "Arial", sans-serif;
+  line-height: 1.75em;
+  margin-top: 0; }
+  h3.alt {
+    color: #37ffb0; }
+
+p {
+  font-size: 1em;
+  font-family: "Proxima Nova", "Helvetica", "Arial", sans-serif;
+  line-height: 1.5em; }
+
+ul, li {
+  font-family: "Proxima Nova", "Helvetica", "Arial", sans-serif;
+  line-height: 1.5em; }
+
+a {
+  color: #37ffb0; }
+  a:hover {
+    color: #ff4b37; }
+
+mark {
+  background: #37ffb0;
+  color: #152f47; }
+
+cite {
+  font-family: "Proxima Nova", "Helvetica", "Arial", sans-serif; }
+
+fieldset {
+  border: 0.1875em solid #301429; }
+  fieldset legend {
+    font-family: "Proxima Nova", "Helvetica", "Arial", sans-serif; }
+
+.btn {
+  display: inline-block;
+  padding: 0.5em 1em;
+  border: 0.1875em solid transparent;
+  color: white;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  font-weight: normal;
+  font-size: 1em;
+  font-family: "Proxima Nova", "Helvetica", "Arial", sans-serif;
+  line-height: 1em;
+  cursor: pointer;
+  touch-action: manipulation;
+  user-select: none; }
+  .btn.btn-default {
+    background: #ff4b37; }
+    .btn.btn-default:hover {
+      background: white;
+      color: #ff4b37; }
+  .btn.btn-alt {
+    background: #37ffb0;
+    color: #152f47; }
+    .btn.btn-alt:hover {
+      background: white;
+      color: #37ffb0; }
+  .btn.btn-alt-2 {
+    background: #471539; }
+    .btn.btn-alt-2:hover {
+      background: #ff4b37;
+      color: white; }
+  .btn.btn-alt-3 {
+    background: #152f47; }
+    .btn.btn-alt-3:hover {
+      background: #37ffb0;
+      color: white; }
+  .btn.btn-outline {
+    border: 0.1875em solid #152f47;
+    background: transparent;
+    color: #152f47; }
+    .btn.btn-outline:hover {
+      border-color: #37ffb0;
+      color: #37ffb0; }
+  .btn.btn-outline-inverted {
+    border: 0.1875em solid #ff4b37;
+    background: transparent;
+    color: #ff4b37; }
+    .btn.btn-outline-inverted:hover {
+      color: white;
+      border-color: white; }
+  .btn.btn-outline-inverted-alt {
+    border: 0.1875em solid #37ffb0;
+    background: transparent;
+    color: #37ffb0; }
+    .btn.btn-outline-inverted-alt:hover {
+      color: white;
+      border-color: white; }

@@ -1,0 +1,169 @@
+@import "compass/reset";
+
+
+$purple: rgb(71, 21, 57);
+$purple-dark: rgb(48,20,41);
+
+$navy: rgb(21, 47, 71);
+$navy-dark: rgb(20,34,49);
+
+$aqua: rgb(55, 255, 176);
+$aqua-dark: rgb(28,215,145);
+
+$coral-light: rgb(255,102,82);
+$coral: rgb(255, 75, 55);
+
+$white: rgb(255, 255, 255);
+$gray-light: rgb(232,232,232);
+$gray-medium: rgb(126,128,126);
+$gray-dark: rgb(25, 22, 26);
+
+$font-primary: "Proxima Nova", "Helvetica", "Arial", sans-serif;
+
+* { box-sizing: border-box; }
+
+
+body {
+  background: $purple;
+  color: $white;
+}
+
+
+h1 {
+  color: $white;
+  text-transform: uppercase;
+  text-shadow: 0.08em 0.08em 0 rgba(0,0,0,0.66);
+  letter-spacing: 0.166666667em;
+  font-size: 3em;
+  font-family: $font-primary;
+  line-height: 1;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  color: $white;
+  text-transform: lowercase;
+  letter-spacing: 0.166666667em;
+  font-size: 2.5em;
+  font-family: $font-primary;
+  line-height: 1;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+h3 {
+  color: $coral;
+  letter-spacing: 0.083333333em;
+  font-size: 1.5em;
+  font-family: $font-primary;
+  line-height: 1.75em;
+  margin-top: 0;
+  &.alt { color: $aqua; }
+}
+
+p {
+  font-size: 1em;
+  font-family: $font-primary;
+  line-height: 1.5em;
+}
+
+ul, li {
+  font-family: $font-primary;
+  line-height: 1.5em;
+}
+
+a {
+  color: $aqua;
+  &:hover { color: $coral; }
+}
+
+mark {
+  background: $aqua;
+  color: $navy;
+}
+
+cite {
+  font-family: $font-primary;
+}
+
+fieldset {
+  border: .1875em solid $purple-dark;
+  legend { font-family: $font-primary; }
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5em 1em;
+  border: 0.1875em solid transparent;
+  color: $white;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  font-weight: normal;
+  font-size: 1em;
+  font-family: $font-primary;
+  line-height: 1em;
+  cursor: pointer;
+
+  touch-action: manipulation;
+  user-select: none;
+
+  &.btn-default {
+    background: $coral;
+    &:hover {
+      background: $white;
+      color: $coral;
+    }
+  }
+  &.btn-alt {
+    background: $aqua;
+    color: $navy;
+    &:hover {
+      background: $white;
+      color: $aqua;
+    }
+  }
+  &.btn-alt-2 {
+    background: $purple;
+    &:hover {
+      background: $coral;
+      color: $white;
+    }
+  }
+  &.btn-alt-3 {
+    background: $navy;
+    &:hover {
+      background: $aqua;
+      color: $white;
+    }
+  }
+  &.btn-outline {
+    border: 0.1875em solid $navy;
+    background: transparent;
+    color: $navy;
+    &:hover {
+      border-color: $aqua;
+      color: $aqua;
+    }
+  }
+  &.btn-outline-inverted {
+    border: 0.1875em solid $coral;
+    background: transparent;
+    color: $coral;
+    &:hover {
+      color: $white;
+      border-color: $white;
+    }
+  }
+  &.btn-outline-inverted-alt {
+    border: 0.1875em solid $aqua;
+    background: transparent;
+    color: $aqua;
+    &:hover {
+      color: $white;
+      border-color: $white;
+    }
+  }
+}
