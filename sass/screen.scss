@@ -1,5 +1,4 @@
-@import "compass/reset";
-
+@import 'normalize';
 
 $purple: rgb(71, 21, 57);
 $purple-dark: rgb(48,20,41);
@@ -22,6 +21,7 @@ $font-primary: "Proxima Nova", "Helvetica", "Arial", sans-serif;
 
 * { box-sizing: border-box; }
 
+img, iframe { max-width: 100%; }
 
 body {
   background: $purple;
@@ -33,32 +33,34 @@ h1 {
   color: $white;
   text-transform: uppercase;
   text-shadow: 0.08em 0.08em 0 rgba(0,0,0,0.66);
-  letter-spacing: 0.166666667em;
+  letter-spacing: 0.16666667em;
   font-size: 3em;
   font-family: $font-primary;
   line-height: 1;
-  margin-top: 0;
-  margin-bottom: 0.5em;
+  font-weight: 300;
+  // margin-top: 0;
+  // margin-bottom: 0.5em;
 }
 
 h2 {
   color: $white;
-  text-transform: lowercase;
-  letter-spacing: 0.166666667em;
+  main & { color: $navy; }
+  letter-spacing: 0.1em;
   font-size: 2.5em;
   font-family: $font-primary;
+  font-weight: 500;
   line-height: 1;
-  margin-top: 0;
-  margin-bottom: 0.5em;
+  // margin-top: 0;
+  // margin-bottom: 0.5em;
 }
 
 h3 {
   color: $coral;
   letter-spacing: 0.083333333em;
-  font-size: 1.5em;
+  font-size: 1.75em;
   font-family: $font-primary;
-  line-height: 1.75em;
-  margin-top: 0;
+  line-height: 1;
+  // margin-top: 0;
   &.alt { color: $aqua; }
 }
 
@@ -75,7 +77,11 @@ ul, li {
 
 a {
   color: $aqua;
-  &:hover { color: $coral; }
+  text-decoration: none;
+  &:hover {
+    color: $coral;
+    text-decoration: underline;
+  }
 }
 
 mark {
@@ -166,4 +172,63 @@ fieldset {
       border-color: $white;
     }
   }
+}
+
+
+
+nav.main-navigation {
+  background: $purple-dark;
+  .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .menu-item {
+    text-align: center;
+    padding: 1em;
+
+  }
+  a {
+    color: white;
+  }
+}
+
+header {
+  padding: 0 5%;
+}
+
+main {
+  background: $white;
+  color: $navy;
+  padding: 0 5%;
+}
+
+article.episode {
+  h2 {
+    margin: 0;
+    padding: 1em 0;
+  }
+  h3 {
+    margin: 0;
+    padding: 0.5em 0;
+  }
+  p:nth-of-type(1) { margin-top: 0; }
+}
+
+article.episode.episode-exerpt {
+  margin-bottom: 2em;
+}
+
+
+.past-episodes {
+  padding-bottom: 1em;
+}
+
+.advertisement {
+  margin-bottom: 1em;
+}
+
+
+footer[role=contentinfo]{
+  padding: 0 5%;
 }
