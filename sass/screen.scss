@@ -17,9 +17,12 @@ $gray-light: rgb(232,232,232);
 $gray-medium: rgb(126,128,126);
 $gray-dark: rgb(25, 22, 26);
 
-$font-primary: "Proxima Nova", "Helvetica", "Arial", sans-serif;
+$font-primary: "proxima-nova", "Helvetica", "Arial", sans-serif;
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+}
 
 img, iframe { max-width: 100%; }
 
@@ -49,16 +52,16 @@ h2 {
   letter-spacing: 0.1em;
   font-size: 2.5em;
   font-family: $font-primary;
-  font-weight: 500;
+  font-weight: 300;
   line-height: 1;
 }
 
 h3 {
   color: $coral;
-  letter-spacing: 0.083333333em;
   font-size: 1.75em;
   font-family: $font-primary;
   line-height: 1;
+  font-weight: 700;
   &.alt { color: $aqua; }
 }
 
