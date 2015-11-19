@@ -369,7 +369,7 @@ body {
 h1 {
   color: white;
   text-transform: uppercase;
-  text-shadow: 0.08em 0.08em 0 rgba(0, 0, 0, 0.66);
+  text-shadow: 0.025em 0.025em 0 rgba(0, 0, 0, 0.66);
   letter-spacing: 0.16666667em;
   font-size: 3em;
   font-family: "Proxima Nova", "Helvetica", "Arial", sans-serif;
@@ -404,11 +404,11 @@ ul, li {
   font-family: "Proxima Nova", "Helvetica", "Arial", sans-serif;
   line-height: 1.5em; }
 
-a {
-  color: #37ffb0;
+a:not(.btn) {
+  color: #ff4b37;
   text-decoration: none; }
-  a:hover {
-    color: #ff4b37;
+  a:not(.btn):hover {
+    color: #37ffb0;
     text-decoration: underline; }
 
 mark {
@@ -491,6 +491,9 @@ nav.main-navigation {
   nav.main-navigation .menu-item {
     text-align: center;
     padding: 1em; }
+    nav.main-navigation .menu-item.menu-item-active {
+      background: #152f47;
+      border-bottom: 3px solid #37ffb0; }
   nav.main-navigation a {
     color: white; }
   @media (min-width: 540px) {
@@ -498,7 +501,31 @@ nav.main-navigation {
       display: inline-block; } }
 
 header {
-  padding: 0 5%; }
+  background: linear-gradient(45deg, #ff4b37, #471539 80%);
+  padding: 0 5% 1em;
+  position: relative; }
+
+header .content h1 {
+  padding-top: 1em;
+  margin-top: 0; }
+@media (min-width: 820px) {
+  header .content {
+    height: 66vh;
+    padding-right: 25%;
+    font-size: 120%;
+    display: table-cell;
+    width: 100%;
+    vertical-align: bottom;
+    padding-bottom: 3vh; }
+    header .content .subscribe-info {
+      position: absolute;
+      top: 1em;
+      right: 5%;
+      max-width: 350px;
+      font-size: 60%; } }
+@media (min-width: 1200px) {
+  header .content {
+    height: 75vh; } }
 
 main {
   background: white;
@@ -507,6 +534,16 @@ main {
   main h2 {
     margin: 0;
     padding: 1em 0; }
+
+.subscribe-info {
+  padding: 1em;
+  background: #142231;
+  font-size: 80%; }
+  .subscribe-info h2 {
+    margin: 0;
+    text-transform: uppercase; }
+  .subscribe-info p:last-child {
+    margin-bottom: 0; }
 
 article.episode h3 {
   margin: 0;
@@ -531,7 +568,7 @@ article.episode p:nth-of-type(1) {
 
 .video-container {
   position: relative;
-  padding-bottom: 65.25%;
+  padding-bottom: 53.74%;
   padding-top: 30px;
   height: 0;
   overflow: auto;
@@ -544,7 +581,11 @@ article.episode p:nth-of-type(1) {
     height: 100%; }
 
 article.episode.episode-exerpt {
-  margin-bottom: 2em; }
+  margin-bottom: 2em;
+  font-size: 75%; }
+  article.episode.episode-exerpt .video-container {
+    margin-bottom: 0;
+    padding-bottom: 50%; }
 
 .past-episodes {
   padding-bottom: 1em; }

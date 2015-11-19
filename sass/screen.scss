@@ -35,14 +35,12 @@ body {
 h1 {
   color: $white;
   text-transform: uppercase;
-  text-shadow: 0.08em 0.08em 0 rgba(0,0,0,0.66);
+  text-shadow: 0.025em 0.025em 0 rgba(0,0,0,0.66);
   letter-spacing: 0.16666667em;
   font-size: 3em;
   font-family: $font-primary;
   line-height: 1;
   font-weight: 300;
-  // margin-top: 0;
-  // margin-bottom: 0.5em;
 }
 
 h2 {
@@ -53,8 +51,6 @@ h2 {
   font-family: $font-primary;
   font-weight: 500;
   line-height: 1;
-  // margin-top: 0;
-  // margin-bottom: 0.5em;
 }
 
 h3 {
@@ -63,7 +59,6 @@ h3 {
   font-size: 1.75em;
   font-family: $font-primary;
   line-height: 1;
-  // margin-top: 0;
   &.alt { color: $aqua; }
 }
 
@@ -78,11 +73,11 @@ ul, li {
   line-height: 1.5em;
 }
 
-a {
-  color: $aqua;
+a:not(.btn) {
+  color: $coral;
   text-decoration: none;
   &:hover {
-    color: $coral;
+    color: $aqua;
     text-decoration: underline;
   }
 }
@@ -189,6 +184,10 @@ nav.main-navigation {
   .menu-item {
     text-align: center;
     padding: 1em;
+    &.menu-item-active {
+      background: $navy;
+      border-bottom: 3px solid $aqua;
+    }
   }
   a {
     color: white;
@@ -199,7 +198,35 @@ nav.main-navigation {
 }
 
 header {
-  padding: 0 5%;
+  background: linear-gradient(45deg, $coral, $purple 80%);
+  padding: 0 5% 1em;
+  position: relative;
+}
+
+header .content {
+  h1 {
+    padding-top: 1em;
+    margin-top: 0;
+  }
+  @media (min-width: 820px){
+    height: 66vh;
+    padding-right: 25%;
+    font-size: 120%;
+    display: table-cell;
+    width: 100%;
+    vertical-align: bottom;
+    padding-bottom: 3vh;
+    .subscribe-info {
+      position: absolute;
+      top: 1em;
+      right: 5%;
+      max-width: 350px;
+      font-size: 60%;
+    }
+  }
+  @media (min-width: 1200px){
+    height: 75vh;
+  }
 }
 
 main {
@@ -210,6 +237,17 @@ main {
     margin: 0;
     padding: 1em 0;
   }
+}
+
+.subscribe-info {
+  padding: 1em;
+  background: $navy-dark;
+  font-size: 80%;
+  h2 {
+    margin: 0;
+    text-transform: uppercase;
+  }
+  p:last-child { margin-bottom: 0; }
 }
 
 article.episode {
@@ -237,7 +275,7 @@ article.episode {
 
 .video-container {
   position: relative;
-  padding-bottom: 65.25%;
+  padding-bottom: 53.74%;
   padding-top: 30px;
   height: 0;
   overflow: auto;
@@ -253,6 +291,11 @@ article.episode {
 
 article.episode.episode-exerpt {
   margin-bottom: 2em;
+  font-size: 75%;
+  .video-container {
+    margin-bottom: 0;
+    padding-bottom: 50%;
+  }
 }
 
 
