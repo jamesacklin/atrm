@@ -354,7 +354,8 @@ th {
   padding: 0; }
 
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility; }
 
 img, iframe {
   max-width: 100%; }
@@ -372,7 +373,7 @@ h1 {
   text-shadow: 0.025em 0.025em 0 rgba(0, 0, 0, 0.66);
   letter-spacing: 0.16666667em;
   font-size: 3em;
-  font-family: "Proxima Nova", "Helvetica", "Arial", sans-serif;
+  font-family: "proxima-nova", "Helvetica", "Arial", sans-serif;
   line-height: 1;
   font-weight: 300; }
 
@@ -380,28 +381,28 @@ h2 {
   color: white;
   letter-spacing: 0.1em;
   font-size: 2.5em;
-  font-family: "Proxima Nova", "Helvetica", "Arial", sans-serif;
-  font-weight: 500;
+  font-family: "proxima-nova", "Helvetica", "Arial", sans-serif;
+  font-weight: 300;
   line-height: 1; }
   main h2 {
     color: #152f47; }
 
 h3 {
   color: #ff4b37;
-  letter-spacing: 0.083333333em;
   font-size: 1.75em;
-  font-family: "Proxima Nova", "Helvetica", "Arial", sans-serif;
-  line-height: 1; }
+  font-family: "proxima-nova", "Helvetica", "Arial", sans-serif;
+  line-height: 1;
+  font-weight: 700; }
   h3.alt {
     color: #37ffb0; }
 
 p {
   font-size: 1em;
-  font-family: "Proxima Nova", "Helvetica", "Arial", sans-serif;
+  font-family: "proxima-nova", "Helvetica", "Arial", sans-serif;
   line-height: 1.5em; }
 
 ul, li {
-  font-family: "Proxima Nova", "Helvetica", "Arial", sans-serif;
+  font-family: "proxima-nova", "Helvetica", "Arial", sans-serif;
   line-height: 1.5em; }
 
 a:not(.btn) {
@@ -416,12 +417,12 @@ mark {
   color: #152f47; }
 
 cite {
-  font-family: "Proxima Nova", "Helvetica", "Arial", sans-serif; }
+  font-family: "proxima-nova", "Helvetica", "Arial", sans-serif; }
 
 fieldset {
   border: 0.1875em solid #301429; }
   fieldset legend {
-    font-family: "Proxima Nova", "Helvetica", "Arial", sans-serif; }
+    font-family: "proxima-nova", "Helvetica", "Arial", sans-serif; }
 
 .btn {
   display: inline-block;
@@ -434,7 +435,7 @@ fieldset {
   white-space: nowrap;
   font-weight: normal;
   font-size: 1em;
-  font-family: "Proxima Nova", "Helvetica", "Arial", sans-serif;
+  font-family: "proxima-nova", "Helvetica", "Arial", sans-serif;
   line-height: 1em;
   cursor: pointer;
   touch-action: manipulation;
