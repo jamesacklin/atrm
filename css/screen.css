@@ -500,8 +500,13 @@ nav.main-navigation {
     nav.main-navigation .menu-item {
       display: inline-block; } }
 
+@keyframes background-move {
+  0% {
+    background-position: bottom center; }
+  100% {
+    background-position: top center; } }
 header {
-  background: linear-gradient(45deg, #ff4b37, #471539 80%);
+  background-image: linear-gradient(45deg, #ff4b37, #471539);
   padding: 0 5% 1em;
   position: relative; }
 

@@ -197,8 +197,13 @@ nav.main-navigation {
   }
 }
 
+@keyframes background-move {
+  0% { background-position: bottom center; }
+  100% { background-position: top center; }
+}
+
 header {
-  background: linear-gradient(45deg, $coral, $purple 80%);
+  background-image: linear-gradient(45deg, $coral, $purple);
   padding: 0 5% 1em;
   position: relative;
 }
