@@ -510,6 +510,8 @@ header {
   background-image: linear-gradient(45deg, #ff4b37, #471539);
   padding: 0 5% 1em;
   position: relative; }
+  .single-episode header, .episodes-list header {
+    padding: 1em 5%; }
 
 header .content h1 {
   padding-top: 1em;
@@ -550,6 +552,12 @@ main {
     text-transform: uppercase; }
   .subscribe-info p:last-child {
     margin-bottom: 0; }
+  .subscribe-info.newsletter-subscribe {
+    text-align: center;
+    padding: 1em;
+    font-size: 100%; }
+    .subscribe-info.newsletter-subscribe p {
+      margin: 0; }
 
 article.episode h3 {
   margin: 0;
@@ -570,7 +578,12 @@ article.episode p:nth-of-type(1) {
       text-align: center; }
       article.episode aside .btn {
         display: block;
-        margin-bottom: 1em; } }
+        margin-bottom: 1em; }
+      .single-episode article.episode aside, .episodes-list article.episode aside {
+        top: 2em; } }
+.single-episode article.episode, .episodes-list article.episode {
+  padding-top: 2em;
+  padding-bottom: 2em; }
 
 .video-container {
   position: relative;
@@ -613,3 +626,11 @@ article.episode.episode-exerpt {
 
 footer[role=contentinfo] {
   padding: 0 5%; }
+
+.short-bio {
+  margin: 2em auto;
+  max-width: 750px; }
+  .short-bio img {
+    float: left;
+    display: inline;
+    margin: 0.3em 2% 0 0; }

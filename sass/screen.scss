@@ -209,6 +209,10 @@ header {
   background-image: linear-gradient(45deg, $coral, $purple);
   padding: 0 5% 1em;
   position: relative;
+  .single-episode &,
+  .episodes-list & {
+    padding: 1em 5%;
+  }
 }
 
 header .content {
@@ -256,6 +260,12 @@ main {
     text-transform: uppercase;
   }
   p:last-child { margin-bottom: 0; }
+  &.newsletter-subscribe {
+    text-align: center;
+    padding: 1em;
+    font-size: 100%;
+    p { margin: 0; }
+  }
 }
 
 article.episode {
@@ -277,7 +287,16 @@ article.episode {
       right: 0;
       text-align: center;
       .btn { display: block; margin-bottom: 1em; }
+      .single-episode &,
+      .episodes-list & {
+        top: 2em;
+      }
     }
+  }
+  .single-episode &,
+  .episodes-list & {
+    padding-top: 2em;
+    padding-bottom: 2em;
   }
 }
 
@@ -335,4 +354,14 @@ article.episode.episode-exerpt {
 
 footer[role=contentinfo]{
   padding: 0 5%;
+}
+
+.short-bio {
+  margin: 2em auto;
+  max-width: 750px;
+  img {
+    float: left;
+    display: inline;
+    margin: 0.3em 2% 0 0;
+  }
 }
